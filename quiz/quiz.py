@@ -48,4 +48,4 @@ else:
     print("Incorrect!")
     
 print(f"Your score is {score}/5")
-print("See you next time")
+print("See you next time!")
