@@ -47,5 +47,5 @@ if ans.lower() == "solid state drive":
 else:
     print("Incorrect!")
     
-print("Your score is {}/5".format(score))
+print(f"Your score is {score}/5")
 print("See you next time")
