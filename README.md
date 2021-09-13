@@ -17,3 +17,11 @@ This repo houses several mini projects created in python.
   * Reading from standard in
   * Psuedo-random number generation
   * More practice with control flow
+## Rock paper scissors
+* Play a game of rock, paper, scissors against the computer
+* Used to practice the following:
+  * User prompts
+  * Read from standard input
+  * Tuple methods
+  * Psuedo-random number generation
+  * Control flow with if's and while's 
