@@ -1,9 +1,9 @@
 # Python-Practice
 This repo houses several mini projects created in python.
----
+
 ## Quiz
-* Five question quiz that tracks user's score
-  * Used to practice the following concepts:
+* A five question quiz that tracks user's score
+* Used to practice the following concepts:
   * Variable initialization
   * Printing to console window
   * Reading user input into variables
