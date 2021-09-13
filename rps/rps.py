@@ -52,7 +52,7 @@ while play == True:
             if user_choice == "y":
                 user_score = 0
                 computer_score = 0
-                continue
+                break
             elif user_choice == "n":
                 print("See you next time!")
                 play = False
