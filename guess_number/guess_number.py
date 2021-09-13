@@ -32,7 +32,10 @@ while int(guess) != ans:
     while not 0 <= int(guess) <= top_of_range:
         guess = input(f"Please enter a number between 0 and {top_of_range}: ")
         attempts += 1
-    guess = input("Incorrect! Try again: ")
+    if int(guess) > ans:
+        guess = input("You were above the number! Try again: ")
+    else:
+        guess = input("You were below the number! Try again: ")
     attempts += 1
 
 if (int(guess) == ans):
