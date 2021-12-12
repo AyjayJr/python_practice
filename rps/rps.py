@@ -15,7 +15,7 @@ while play == True:
 
     # if they don't make a valid choice ask again
     if user_choice not in rps:
-        continue
+       continue
 
     # assign user_choice
     if user_choice in rps:
