@@ -65,19 +65,31 @@ class LinkedList:
             self.tail = None
         return temp.value
 
+    def get(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
+    
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp is not None:
+            temp.value = value
+            return True
+        return False 
+
+
 def main():
-    linked = LinkedList(20)
-    linked.append(40)
-    linked.append(60)
+    linked = LinkedList(0)
+    linked.append(1)
+    linked.append(2)
+    linked.append(3)
     linked.print_list()
     print()
-    print(linked.pop())
-    linked.prepend(10)
-    print()
-    linked.print_list()
-    print()
-    print(linked.pop_first())
-    print()
+    print(linked.get(2))
+    print(linked.set_value(6,4))
     linked.print_list()
 
 if __name__ == "__main__":
