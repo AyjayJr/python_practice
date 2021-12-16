@@ -80,6 +80,45 @@ class LinkedList:
             return True
         return False 
 
+    def insert(self, index, value):
+        if index < 0 or index > self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        new_node = Node(value)
+        temp = self.get(index - 1)
+        new_node.next = temp.next
+        temp.next = new_node
+        self.length += 1
+        return True
+        
+    def remove(self, index):
+        if index < 0 or index >= self.length:
+           return None
+        if index == 0:
+           return self.pop_first() 
+        if index == (self.length - 1):
+           return self.pop()
+        prev = self.get(index - 1)
+        temp = prev.next 
+        prev.next = temp.next 
+        temp.next = None
+        self.length -= 1
+        return temp 
+    
+    def reverse(self):
+        temp = self.head
+        self.head = self.tail 
+        self.tail = temp 
+        prev = None
+        while temp:
+           next = temp.next
+           temp.next = prev
+           prev = temp 
+           temp = next 
+
 
 def main():
     linked = LinkedList(0)
@@ -88,9 +127,9 @@ def main():
     linked.append(3)
     linked.print_list()
     print()
-    print(linked.get(2))
-    print(linked.set_value(6,4))
+    linked.reverse()
     linked.print_list()
+
 
 if __name__ == "__main__":
     main()
