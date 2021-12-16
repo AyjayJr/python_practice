@@ -25,3 +25,6 @@ This repo houses several mini projects created in python.
   * Tuple methods
   * Psuedo-random number generation
   * Control flow with if's and while's 
+## DSA
+* A folder for practice with Data Structures and Algorithms in python
+  * Linked Lists and associated methods such as append, pop, insert, etc.
