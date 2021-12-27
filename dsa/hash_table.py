@@ -22,7 +22,7 @@ class HashTable:
                     return item
         return None
 
-    def keys(self):
+    def get_keys(self):
         ret = []
         for index in self.data_map:
             if index is not None:
@@ -45,7 +45,7 @@ def main():
     ht.print_table()
     item = ht.get_item('bolts')
     print(item)
-    print(ht.keys())
+    print(ht.get_keys())
 
 if __name__ == "__main__":
     main()  
