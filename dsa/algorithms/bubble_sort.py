@@ -9,7 +9,7 @@ def bubble_sort(my_list):
 
 
 def main():
-    l = [6,5,4,3,2,1]
+    l = [5,3,6,1,7,3]
     print(bubble_sort(l))
 
 if __name__ == "__main__":
