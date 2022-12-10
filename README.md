@@ -1,4 +1,4 @@
-# Python-Practice
+# python_practice
 This repo houses several mini projects created in python.
 
 ## Quiz
